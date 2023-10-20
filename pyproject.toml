@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.103.2"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
-sqlalchemy = "^2.0.21"
+sqlalchemy = "^2.0.22"
 psycopg2 = "^2.9.9"
 alembic = "^1.12.0"
 pydantic = {extras = ["email"], version = "^2.4.2"}
@@ -17,6 +17,11 @@ libgravatar = "^1.0.4"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 python-multipart = "^0.0.6"
+fastapi-mail = "^1.4.1"
+redis = "^4.5.0"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.36.0"
+pydantic-settings = "^2.0.3"
 
 
 [build-system]
