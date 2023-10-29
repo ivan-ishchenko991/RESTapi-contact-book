@@ -1,1 +1,8 @@
 .env
+/.pytest_cache/
+/.idea/
+/.__pycache__/
+test.db
+test.db
+*.db
+
