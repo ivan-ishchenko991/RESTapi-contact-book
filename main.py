@@ -27,8 +27,14 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup():
-    r = await redis.Redis(host=settings.redis_host, port=settings.redis_port, db=0, encoding="utf-8",
-                          decode_responses=True)
+    r = await redis.Redis(
+        host=settings.redis_host,
+        port=settings.redis_port,
+        password=settings.redis_password,
+        db=0,
+        encoding="utf-8",
+        decode_responses=True
+    )
     await FastAPILimiter.init(r)
 
 
